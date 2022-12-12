@@ -1,0 +1,26 @@
+# Git bash aliases
+alias gco='git checkout'
+alias gre='function _gri() { git rebase -i HEAD~"$1"; }; _gri'
+alias grs='function _grs() { git reset HEAD~"$1"; }; _grs'
+alias master="git rebase origin/master"
+alias gmaster='function _master() { git rebase "$1" origin/master; }; _master'
+alias gfix="git commit --amend"
+alias gsha="git rev-parse HEAD"
+alias gstat="git show --stat"
+alias gbr="git branch"
+alias gg="git push"
+alias gp="git pull"
+alias gdiff="git diff"
+alias gdiffn="git diff --name-only"
+alias gsl="git branch --list"
+alias gwip="git status"
+alias gsh="git stash"
+alias gshow="git show"
+alias glog="git log"
+alias gcont="git rebase --continue"
+alias gbor="git rebase --abort"
+alias ghas="git branch --contains"
+alias gall="git add .; git commit -m"
+alias gdel="git branch -D"
+alias gpick="git cherry-pick"
+alias gclean="git branch --merged master | grep -v 'master' | xargs git branch -D"
