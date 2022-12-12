@@ -1,5 +1,4 @@
 # Run this file to set up dotfiles and configs
-
 #!/usr/bin/env bash
 
 set -eu pipefail -x
