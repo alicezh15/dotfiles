@@ -1,0 +1,19 @@
+###### Personal ######
+
+# Key bindings, up/down arrow searches through history
+bind '"\e[A": history-search-backward'
+bind '"\eOA": history-search-backward'
+bind '"\e[B": history-search-forward'
+bind '"\eOB": history-search-forward'
+
+# Git setups
+source ~/.git-completion.bash
+source ~/.git-prompt.sh
+
+GIT_PS1_SHOWCOLORHINTS=true
+GIT_PS1_SHOWUNTRACKEDFILES=true
+GIT_PS1_SHOWDIRTYSTATE=true
+PROMPT_COMMAND='__git_ps1 "[Workspace] ${WORKSPACE_NAME}:\w" "\\\$ "'
+
+# Alias
+source ~/.aliases
