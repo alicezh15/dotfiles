@@ -1,0 +1,21 @@
+###### Personal ######
+
+# Key bindings, up/down arrow searches through history
+bindkey "\e[A" history-search-backward
+bindkey "\eOA" history-search-backward
+bindkey "\e[B" history-search-forward
+bindkey "\eOB" history-search-forward
+
+# Git set ups
+# source ~/.git-completion.zsh
+mkdir -p ~/.zsh/functions && cp git-completion.zsh ~/.zsh/functions/_git
+
+source ~/.git-prompt.sh
+
+GIT_PS1_SHOWCOLORHINTS=true
+GIT_PS1_SHOWUNTRACKEDFILES=true
+GIT_PS1_SHOWDIRTYSTATE=true
+PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
+
+# Alias
+source ~/.aliases
